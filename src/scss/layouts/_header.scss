@@ -1,0 +1,49 @@
+header {
+    background-color: $primary-design-color;
+
+    .header__search {
+        width: 500px;
+        height: 45px;
+
+        input {
+            outline: none;
+            border: none;
+            width: 94%;
+            padding-left: 20px;
+            color: white;
+        }
+
+        span {
+            font-size: 22px;
+            width: 6%;
+            cursor: pointer;
+        }
+    }
+    .header__user {
+        a {
+            font-weight: 500;
+            transition: all 100ms linear;
+        }
+
+    }
+
+    .header__shopping {
+        font-size: 26px;
+        margin-right: 9px;
+
+        span {
+            background-color: red;
+            top: -25%;
+            right: -30%;
+            font-size: 14px;
+            border-radius: 50%;
+            min-width: 18px;
+            min-height: 18px;
+        }
+    }
+
+    ::placeholder {
+        font-family: 'Montserrat';
+        color: white;
+    }
+}

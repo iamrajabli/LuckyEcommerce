@@ -1,0 +1,7 @@
+.hover-second-color {
+    &:hover {
+        background-color: $secondary-design-color !important;
+        color:white !important;
+        border:1px solid $secondary-design-color !important; 
+    }
+}
