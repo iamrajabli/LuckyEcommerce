@@ -125,3 +125,31 @@ header ::placeholder {
   font-family: 'Montserrat';
   color: white;
 }
+
+nav .nav__category {
+  background-color: #106853;
+}
+
+nav .nav__menu ul li a {
+  position: relative;
+}
+
+nav .nav__menu ul li a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 1px;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  background-color: #fff;
+}
+
+nav .nav__menu ul li a:hover:after {
+  width: 100%;
+}
+
+nav i[class='fa-solid fa-chevron-right'] {
+  font-size: 12px;
+}
