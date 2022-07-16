@@ -1,0 +1,9 @@
+@mixin line {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 1px;
+    transition: all 200ms linear;
+}

@@ -126,28 +126,96 @@ header ::placeholder {
   color: white;
 }
 
+nav {
+  position: relative;
+}
+
 nav .nav__category {
   background-color: #106853;
 }
 
-nav .nav__menu ul li a {
+nav .nav__category:hover .nav__menu-submenu {
+  display: block;
+}
+
+nav .nav__category .nav__menu-submenu {
+  width: 100%;
+}
+
+nav .nav__category .nav__menu-submenu i {
+  opacity: .2;
+}
+
+nav .nav__menu > ul > li i {
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+nav .nav__menu > ul > li:hover i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+nav .nav__menu > ul > li:hover .nav__menu-submenu {
+  display: block;
+}
+
+nav .nav__menu > ul > li > a {
   position: relative;
 }
 
-nav .nav__menu ul li a::after {
+nav .nav__menu > ul > li > a::after {
   position: absolute;
   top: 100%;
   left: 0;
   content: "";
   width: 0%;
   height: 1px;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
   background-color: #fff;
 }
 
-nav .nav__menu ul li a:hover:after {
+nav .nav__menu > ul > li > a:hover:after {
   width: 100%;
+}
+
+nav .nav__menu .nav__menu-submenu {
+  width: 160px;
+}
+
+nav .nav__menu-submenu {
+  display: none;
+  line-height: 20px;
+  border: 1px solid #f3f3f3;
+}
+
+nav .nav__menu-submenu > ul {
+  position: relative;
+}
+
+nav .nav__menu-submenu > ul > li {
+  position: relative;
+}
+
+nav .nav__menu-submenu > ul > li::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 1px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-color: #106853;
+}
+
+nav .nav__menu-submenu > ul > li:hover:after {
+  width: 100%;
+}
+
+nav .nav__menu-submenu > ul > li:not(:last-child) {
+  border-bottom: 1px solid #f3f3f3;
 }
 
 nav i[class='fa-solid fa-chevron-right'] {
