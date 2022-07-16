@@ -61,7 +61,8 @@ nav {
         display: none;
         line-height: 20px;
         border: 1px solid rgb(243, 243, 243);
-
+        z-index: 10;
+        background-color: $primary-bg-color;
         >ul {
             position: relative;
 
