@@ -1,4 +1,7 @@
 .products {
+    background-image: url('/src/resources/img/pattern/1.png'), url('/src/resources/img/pattern/2.png');
+    background-repeat: no-repeat;
+    background-position: left 90%, right 50%;
     background-color: #F8F8F8;
     padding: 80px 0;
 
@@ -28,6 +31,10 @@
         .products__item-header {
             a {
                 font-size: 12px;
+
+                &:hover {
+                    color: white
+                }
             }
 
             i {
