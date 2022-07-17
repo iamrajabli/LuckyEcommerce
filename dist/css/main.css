@@ -368,6 +368,10 @@ nav i[class='fa-solid fa-chevron-right'] {
 #division .division__left a,
 #division .division__right a {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
 }
 
 #division .division__left a h3,
