@@ -7,3 +7,15 @@
     height: 1px;
     transition: all 200ms linear;
 }
+
+@mixin header__line {
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 35px;
+    height: 5px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    content: '';
+}

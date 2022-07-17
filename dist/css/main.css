@@ -263,8 +263,8 @@ nav i[class='fa-solid fa-chevron-right'] {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 5px;
-  background-color: #106853;
   content: '';
+  background-color: #106853;
 }
 
 .products .products__item .products__item-header a {
@@ -314,6 +314,110 @@ nav i[class='fa-solid fa-chevron-right'] {
 
 .products .products__item .products__item-content h3 {
   line-height: 20px;
+}
+
+#division {
+  background-image: url("/src/resources/img/pattern/3.png");
+  background-repeat: no-repeat;
+  background-position: left 90%, right 50%;
+  padding: 50px 0;
+  background-color: #fc8410;
+}
+
+#division .division__header {
+  margin-bottom: 35px;
+}
+
+#division .division__header h1 {
+  display: inline;
+  position: relative;
+}
+
+#division .division__header h1::after {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 35px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  content: '';
+  background-color: white;
+}
+
+#division .division__left {
+  height: 323px;
+}
+
+#division .division__left,
+#division .division__right {
+  position: relative;
+  overflow: hidden;
+}
+
+#division .division__left img,
+#division .division__right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#division .division__left a,
+#division .division__right a {
+  position: relative;
+}
+
+#division .division__left a h3,
+#division .division__left a h5,
+#division .division__right a h3,
+#division .division__right a h5 {
+  top: 20px;
+  left: 20px;
+  z-index: 1111;
+  color: black;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+#division .division__left a::after,
+#division .division__right a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  content: '';
+}
+
+#division .division__left a:hover:after,
+#division .division__right a:hover:after {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#division .division__left a:hover img,
+#division .division__right a:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#division .division__left a:hover h3,
+#division .division__left a:hover h5,
+#division .division__right a:hover h3,
+#division .division__right a:hover h5 {
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#division .division__right a {
+  overflow: hidden;
+  max-height: 150px;
 }
 
 .btn-transparent {
