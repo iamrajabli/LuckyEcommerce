@@ -2,5 +2,21 @@ html {
     font-size: 16px;
     font-family: $primary-font
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $secondary-design-color;
+
+}
+
+
+
+
 @import 'header';
 @import 'navbar';
+@import 'products'
