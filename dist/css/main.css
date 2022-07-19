@@ -361,7 +361,6 @@ nav i[class='fa-solid fa-chevron-right'] {
 
 #division .division__left,
 #division .division__right {
-  position: relative;
   overflow: hidden;
 }
 
@@ -375,11 +374,7 @@ nav i[class='fa-solid fa-chevron-right'] {
 
 #division .division__left a,
 #division .division__right a {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
+  overflow: hidden;
 }
 
 #division .division__left a h3,
@@ -428,8 +423,72 @@ nav i[class='fa-solid fa-chevron-right'] {
 }
 
 #division .division__right a {
-  overflow: hidden;
   max-height: 150px;
+}
+
+#categories {
+  background-image: url("/src/resources/img/pattern/4.png");
+  background-repeat: no-repeat;
+  background-position: right, bottom;
+  padding: 63px 0;
+  margin-bottom: 100px;
+  background-color: #106853;
+}
+
+#categories .container {
+  margin-top: -100px;
+  margin-bottom: 85px;
+}
+
+#categories .categories__center {
+  height: 151px;
+}
+
+#categories .categories__left,
+#categories .categories__right {
+  height: 322px;
+}
+
+#categories a {
+  overflow: hidden;
+}
+
+#categories a h3,
+#categories a h5 {
+  top: 20px;
+  left: 20px;
+  z-index: 1111;
+  color: black;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+#categories a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  content: '';
+}
+
+#categories a:hover:after {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#categories a:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#categories a:hover h3,
+#categories a:hover h5 {
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .btn-transparent {

@@ -28,7 +28,6 @@
 
     .division__left,
     .division__right {
-        position: relative;
         overflow: hidden;
 
         img {
@@ -38,9 +37,7 @@
         }
 
         a {
-            position: relative;
-            display: flex;
-            height: 100%;
+            overflow: hidden;
 
             h3,
             h5 {
@@ -83,7 +80,6 @@
 
     .division__right {
         a {
-            overflow: hidden;
             max-height: 150px;
         }
     }
