@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Lucky</title>
+</head>
+
+<body>
+    <Header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end py-2">
+                    <div class="header__user d-flex gap-3">
+                        <a href="#" class="btn-transparent">Daxil ol</a>
+                        <a href="#" class="btn-white">Qeydiyyat</a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <a href="index.html">
+                        <img src="https://los.az/lucky/images/logo/logo-header.svg" alt="Los.az Logo">
+                    </a>
+                    <div
+                        class="header__search border border-white rounded d-flex justify-content-between align-items-center">
+                        <input type="text" placeholder="Axtar" class="h-100 bg-transparent">
+                        <span class="h-100 d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                        </span>
+                    </div>
+
+                    <div class="header__shopping d-flex gap-4">
+                        <a href="" class="text-white position-relative">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="position-absolute d-flex justify-content-center align-items-center">0</span>
+                        </a>
+                        <a href="" class="text-white position-relative">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="position-absolute d-flex justify-content-center align-items-center">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="nav__category col-4 px-0">
+                        <ul>
+                            <li class="py-3 position-relative">
+                                <a href="#" class="my-2 px-2 text-white text-decoration-none d-flex gap-3">
+                                    <i class="fa-solid fa-sliders ms-3"></i>
+                                    Kateqoriyalar
+                                </a>
+
+                                <div class="nav__menu-submenu position-absolute top-100">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                class="py-3 px-3 text-dark text-decoration-none d-flex justify-content-between align-items-center">
+                                                Ofis ləvazimatları
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="py-3 px-3 text-dark text-decoration-none d-flex justify-content-between align-items-center">
+                                                Qida və İçkilər
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="py-3 px-3 text-dark text-decoration-none d-flex justify-content-between align-items-center">
+                                                Təsərrüfat malları
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="py-3 px-3 text-dark text-decoration-none d-flex justify-content-between align-items-center">
+                                                Elektron avadanlıq
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="py-3 px-3 text-dark text-decoration-none d-flex justify-content-between align-items-center">
+                                                Dibçək gülləri
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="py-3 px-3 text-dark text-decoration-none d-flex justify-content-between align-items-center">
+                                                Hədiyyəlik
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="py-3 px-3 text-dark text-decoration-none d-flex justify-content-between align-items-center">
+                                                Coffee shop
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__menu col-8">
+                        <ul class="d-flex gap-4 ms-3">
+                            <li class="py-3">
+                                <a href="#" class="py-2 text-white text-decoration-none d-inline-block">
+                                    Haqqımızda
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a href="#" class="py-2 text-white text-decoration-none d-inline-block">
+                                    Yeni
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a href="#" class="py-2 text-white text-decoration-none d-inline-block">
+                                    Endirimlər
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a href="#" class="py-2 text-white text-decoration-none d-inline-block">
+                                    Ən çox satılanlar
+                                </a>
+                            </li>
+                            <li class="py-3 position-relative">
+                                <a href="#"
+                                    class="py-2 text-white text-decoration-none d-flex align-items-center gap-2">
+                                    Şərtlər
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+
+                                <div class="nav__menu-submenu position-absolute top-100 start-0 border">
+                                    <ul class="d-flex flex-column">
+                                        <li>
+                                            <a href="#" class="py-3 px-3 text-dark text-decoration-none d-inline-block">
+                                                Çatdırılma
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-3 px-3 text-dark text-decoration-none d-inline-block">
+                                                Geri qaytarılma və dəyişdirilmə
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="py-3">
+                                <a href="#" class="py-2 text-white text-decoration-none d-inline-block">
+                                    Əlaqə</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </Header>
+
+    <section id="tools">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section__header text-center">
+                    <h1 class="h1">Ofis ləvazimatları</h1>
+                </div>
+
+                <div class="col-4 border tools__left d-flex flex-column gap-5">
+                    <div class="tools__price border-bottom">
+                        <h5 class="tools__header h5">Qiymət filteri</h5>
+                        <div class="tools__range">
+                            <input class="start" value="0" min="0" max="100" type="range">
+                            <input class="end" value="100" min="0" max="100" type="range">
+                            <!-- <div class="slider-track"></div>
+                            <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                            <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()"> -->
+                        </div>
+                        <div class="tools__price-container d-flex justify-content-around align-items-center">
+                            <div class="tools__price-item d-flex align-items-center">
+                                <input type="number" value="0">
+                                ₼
+                            </div>
+                            <div class="tools__price-item d-flex align-items-center">
+                                <input type="number" value="100">
+                                ₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools__categories d-flex flex-column gap-2">
+                        <div class="tools__header">
+                            <h5 class="h5">Alt kateqoriya</h5>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="78">
+                            <h3>Ağardıcı</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="48">
+                            <h3>Bıçaq</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="77">
+                            <h3>Bloknot</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="117">
+                            <h3>Çek və qaimə</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="121">
+                            <h3>Çərçivə</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="60">
+                            <h3>Delgəc</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="127">
+                            <h3>Dəftər</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="65">
+                            <h3>Fayl</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="69">
+                            <h3>Kağız</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="70">
+                            <h3>Kalkulyator</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="107">
+                            <h3>Karandaş</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="75">
+                            <h3>Karandaş yonan</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="66">
+                            <h3>Marker</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="80">
+                            <h3>Masaüstü dəstləri</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="73">
+                            <h3>Pozan</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="62">
+                            <h3>Pul Rezini</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="61">
+                            <h3>Qayçı</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="63">
+                            <h3>Qeyd Kağızı</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="71">
+                            <h3>Qısqac</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="68">
+                            <h3>Qovluq</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="67">
+                            <h3>Qələm</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="76">
+                            <h3>Skoç</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="74">
+                            <h3>Skrepka</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="64">
+                            <h3>Stepler və ehtiyatları</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="114">
+                            <h3>Sənəd Dolabı</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="79">
+                            <h3>Sənəd Rəfi</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="120">
+                            <h3>Xətkeş</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="72">
+                            <h3>Yapışqan</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="81">
+                            <h3>Yazı Lövhəsi</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="82">
+                            <h3>Zibil Qabı</h3>
+                        </div>
+                        <div class="tools__item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="109">
+                            <h3>Zərf</h3>
+                        </div>
+                    </div>
+                    <div class="tools__other border-top d-flex flex-column gap-2 py-4">
+                        <div class="tools__other-item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="78">
+                            <h3>Yeni</h3>
+                        </div>
+                        <div class="tools__other-item d-flex align-items-center gap-2">
+                            <input type="checkbox" value="78">
+                            <h3>Tövsiyyə edilir</h3>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-first py-3 px-5 mt-3">Filterlə</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-3 d-flex align-items-center justify-content-center flex-column gap-3">
+                    <img src="src/resources/img/logo/logo-footer.svg" alt="">
+                    <div class="footer__soc">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer__header">
+                        <h5 class="h5">Kateqoriyalar</h5>
+                    </div>
+                    <ul class="d-flex flex-column gap-3">
+                        <li><a href="office.html">Ofis ləvazimatları</a></li>
+                        <li><a href="#">Qida və İçkilər</a></li>
+                        <li><a href="#">Təsərrüfat malları</a></li>
+                        <li><a href="#">Elektron avadanlıq</a></li>
+                        <li><a href="#">Dibçək gülləri</a></li>
+                        <li><a href="#">Hədiyyəlik</a></li>
+                        <li><a href="#">Coffee shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="footer__header">
+                        <h5 class="h5">Menyular</h5>
+                    </div>
+                    <ul class="d-flex flex-column gap-3">
+                        <li><a href="#">Haqqımızda</a></li>
+                        <li><a href="#">Çatdırılma</a></li>
+                        <li><a href="#">Geri qaytarılma və dəyişdirmə</a></li>
+                        <li><a href="#">Əlaqə</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="footer__header">
+                        <h5 class="h5">Əlaqə</h5>
+                    </div>
+                    <ul class="d-flex flex-column gap-3">
+                        <li><a href="#">Tel.:(994) 99 832 07 77</a></li>
+                        <li><a href="#">E-mail:info@los.az</a></li>
+                        <li><a href="#">Ünvan:Ziya Bünyadov pr, 1965. Çinar Park Biznes Mərkəzi</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 mt-4 d-flex justify-content-around align-items-center footer__bottom py-3">
+                    <h5 class="h5">© Bütün huquqlar qorunur - <a href="#">Lucky Office Support</a></h5>
+                    <h5 class="h5">Powered by <a href="#">Proton.az</a></h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var slider = new Swiper(".mySwiper", {});
+        var brands = new Swiper(".myBrands", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

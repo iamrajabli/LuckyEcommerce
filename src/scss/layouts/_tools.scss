@@ -1,0 +1,129 @@
+#tools {
+    padding: 40px 0;
+    .tools__left {
+        padding: 30px;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, .1);
+
+        .tools__price {
+            padding: 20px 0;
+
+            .tools__range {
+                position: relative;
+                height: 50px;
+
+                input[type=range] {
+                    height: 28px;
+                    -webkit-appearance: none;
+                    margin: 20px 0;
+                    width: 100%;
+                }
+
+                input[type=range]::-webkit-slider-runnable-track {
+                    width: 100%;
+                    height: 7px;
+                    cursor: pointer;
+                    background: $primary-design-color;
+                    border-radius: 6px;
+                    -webkit-appearance: none;
+                    appearance: none;
+                }
+
+                input[type=range]::-webkit-slider-thumb {
+                    border: 0px solid $primary-design-color;
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 21px;
+                    background: $primary-design-color;
+                    cursor: pointer;
+                    -webkit-appearance: none;
+                    margin-top: -7.5px;
+                    appearance: none;
+                    pointer-events: auto;
+
+                }
+
+                input[type="range"] {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    width: 100%;
+                    outline: none;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    background-color: transparent;
+                    pointer-events: none;
+                }
+
+            }
+
+            .tools__price-container {
+                .tools__price-item {
+                    input[type=number] {
+                        border: 2px solid transparent;
+                        outline: none;
+                        background: #d0d0d0;
+                        height: 24px;
+                        width: 72px;
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-right: 8px;
+                        border-radius: 5px;
+
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+
+                    font: {
+                        size: 20px;
+                        weight: 600;
+                    }
+                }
+            }
+
+        }
+
+        .tools__header {
+
+            h5 {
+                position: relative;
+                margin-bottom: 20px;
+
+                &::after {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 33px;
+                    height: 4px;
+                    border-radius: 4px;
+                    content: '';
+                    background-color: $secondary-design-color;
+                }
+            }
+        }
+
+        input[type=checkbox] {
+            width: 16px;
+            height: 16px;
+            accent-color: $secondary-design-color;
+            outline: none;
+        }
+
+        .tools__categories {
+            max-height: 450px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar-thumb {
+                background: $primary-design-color;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: rgb(205, 205, 205)
+            }
+        }
+    }
+}

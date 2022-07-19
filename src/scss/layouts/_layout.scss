@@ -11,7 +11,6 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: $secondary-design-color;
-
 }
 
 
@@ -22,3 +21,4 @@ html {
 @import 'categories';
 @import 'brands';
 @import 'footer';
+@import 'tools';

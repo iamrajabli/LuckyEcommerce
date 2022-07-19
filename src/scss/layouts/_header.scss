@@ -1,6 +1,8 @@
 header {
     background-color: $primary-design-color;
-
+    background-image: url(../../src/resources/img/pattern/5.png);
+    background-position: top right;
+    background-repeat: no-repeat;
     .header__search {
         width: 500px;
         height: 45px;
