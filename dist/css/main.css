@@ -58,6 +58,29 @@ table {
   border: 1px solid #106853 !important;
 }
 
+.section__header {
+  margin-bottom: 35px;
+}
+
+.section__header h1 {
+  display: inline;
+  position: relative;
+}
+
+.section__header h1::after {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 35px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  content: '';
+  background-color: #106853;
+}
+
 html {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -244,29 +267,6 @@ nav i[class='fa-solid fa-chevron-right'] {
   padding: 80px 0;
 }
 
-.products .products__header {
-  margin-bottom: 35px;
-}
-
-.products .products__header h1 {
-  display: inline;
-  position: relative;
-}
-
-.products .products__header h1::after {
-  margin-top: 10px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 35px;
-  height: 5px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-radius: 5px;
-  content: '';
-  background-color: #106853;
-}
-
 .products .products__item .products__item-header a {
   font-size: 12px;
 }
@@ -431,7 +431,6 @@ nav i[class='fa-solid fa-chevron-right'] {
   background-repeat: no-repeat;
   background-position: right, bottom;
   padding: 63px 0;
-  margin-bottom: 100px;
   background-color: #106853;
 }
 
@@ -489,6 +488,14 @@ nav i[class='fa-solid fa-chevron-right'] {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#brands {
+  padding: 38px 0 44px 0;
+}
+
+#brands img {
+  height: 100px;
 }
 
 .btn-transparent {

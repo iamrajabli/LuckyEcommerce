@@ -190,11 +190,10 @@
         </div>
     </section>
 
-
     <section id="office" class="products mt-5">
         <div class="container">
             <div class="row">
-                <div class="products__header col-12 text-center">
+                <div class="section__header col-12 text-center">
                     <h1 class="h1">Ofis ləvazimatları</h1>
                 </div>
                 <div class="col-3">
@@ -324,7 +323,7 @@
     <section id="food" class="products">
         <div class="container">
             <div class="row">
-                <div class="products__header col-12 text-center">
+                <div class="section__header col-12 text-center">
                     <h1 class="h1">Qida və İçkilər</h1>
                 </div>
                 <div class="col-3">
@@ -448,10 +447,73 @@
         </div>
     </section>
 
+    <section id="brands">
+        <div class="container">
+            <div class="row">
+                <div class="section__header col-12 text-center">
+                    <h1 class="h1">Brendlərimiz</h1>
+                </div>
+
+                <div class="swiper myBrands">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/4.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/5.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/6.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/7.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <a href="">
+                                <img src="src/resources/img/brands/8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {});
+        var slider = new Swiper(".mySwiper", {});
+        var brands = new Swiper(".myBrands", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
     </script>
 </body>
 
