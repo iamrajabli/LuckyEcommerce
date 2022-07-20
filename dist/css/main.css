@@ -270,25 +270,29 @@ nav i[class='fa-solid fa-chevron-right'] {
   padding: 80px 0;
 }
 
-.products .products__item .products__item-header a {
+.products__item {
+  margin-bottom: 24px;
+}
+
+.products__item .products__item-header a {
   font-size: 12px;
 }
 
-.products .products__item .products__item-header a:hover {
+.products__item .products__item-header a:hover {
   color: white;
 }
 
-.products .products__item .products__item-header i {
+.products__item .products__item-header i {
   color: #fc8410 !important;
   font-size: 28px;
 }
 
-.products .products__item:hover img {
+.products__item:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.products .products__item .products__item-img {
+.products__item .products__item-img {
   width: 100%;
   height: 200px;
   display: -webkit-box;
@@ -302,13 +306,13 @@ nav i[class='fa-solid fa-chevron-right'] {
           align-items: center;
 }
 
-.products .products__item .products__item-img a {
+.products__item .products__item-img a {
   width: 90%;
   height: 100%;
   overflow: hidden;
 }
 
-.products .products__item .products__item-img a img {
+.products__item .products__item-img a img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -317,13 +321,13 @@ nav i[class='fa-solid fa-chevron-right'] {
   transition: all 200ms linear;
 }
 
-.products .products__item .products__item-content h3 {
+.products__item .products__item-content h3 {
   line-height: 20px;
   height: 40px;
 }
 
-.products .products__item .products__item-content h3,
-.products .products__item .products__item-content h4 {
+.products__item .products__item-content h3,
+.products__item .products__item-content h4 {
   font-weight: 500;
 }
 
@@ -585,9 +589,10 @@ footer ul a:hover:after {
 
 #tools {
   padding: 40px 0;
+  background-color: #F8F8F8;
 }
 
-#tools .tools__left {
+#tools .tools__left form {
   padding: 30px;
   -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
@@ -702,6 +707,63 @@ footer ul a:hover:after {
 
 #tools .tools__left .tools__categories::-webkit-scrollbar-track {
   background: #cdcdcd;
+}
+
+#tools .tools__right .tools__filter {
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+#tools .tools__right .tools__filter select {
+  border: 1px solid #106853;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  padding: 0 10px;
+}
+
+#tools .tools__right .tools__pagination .tools__pagination-item,
+#tools .tools__right .tools__pagination .tools__prev,
+#tools .tools__right .tools__pagination .tools__next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #106853;
+  color: #106853;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+#tools .tools__right .tools__pagination .tools__pagination-item:hover,
+#tools .tools__right .tools__pagination .tools__prev:hover,
+#tools .tools__right .tools__pagination .tools__next:hover {
+  background-color: #fc8410;
+  border: 1px solid #fc8410;
+  color: #fff;
+}
+
+#tools .tools__right .tools__pagination .tools__disabled {
+  background-color: white;
+  color: black;
+  border: 1px solid #d1d1d1;
+}
+
+#tools .tools__right .tools__pagination .tools__disabled:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #d1d1d1;
 }
 
 .btn-transparent {
